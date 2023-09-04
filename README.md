@@ -73,7 +73,7 @@ If you use SynBlink or BlinkFormer in your research, please consider the followi
 
 ## Acknowledgement
 
-This implementation is built upon [DeiT](https://github.com/facebookresearch/deit) and [Swin](https://github.com/microsoft/Swin-Transformer). We thank the authors for their released code.
+This implementation is built upon [VideoTransformer-pytorch](https://github.com/mx-mark/VideoTransformer-pytorch) and [vit-pytorch](https://github.com/lucidrains/vit-pytorch). We thank the authors for their released code.
 
 ## Contact
 

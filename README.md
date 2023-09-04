@@ -9,7 +9,7 @@ This is the official code and data for paper [SynBlink and BlinkFormer: A Synthe
 Accurate blink detection algorithms have significant implications in numerous fields, including human-computer interaction, driving safety, cognitive science, and medical diagnostics. Despite considerable efforts, the dataset volume for blink detection remains relatively small due to the cost of data collection and annotation, and there is still room for improvement in the accuracy of current algorithms.
 In this paper, we introduce a workflow for synthesizing video data in Blender. Fully-rigged 3D human models are programmatically controlled, with variations in head movement, blinking, camera angles, background types, and lighting intensities. We used this workflow to create the **SynBlink** dataset, which includes 50,000 video clips and their corresponding annotations. Additionally, we present **BlinkFormer**, an innovative blink detection algorithm based on Transformer architecture that fully exploits temporal information from video clips.
 
-## SynBlink
+## SynBlink Dataset
 
 ## BlinkFormer
 
@@ -63,19 +63,21 @@ Please feel free to extend SN-Net into other model familiy. The following tips m
 If you use SynBlink or BlinkFormer in your research, please consider the following BibTeX entry and giving us a star
 
 ```BibTeX
-@inproceedings{pan2023snnet,
-  title={Stitchable Neural Networks},
-  author={Pan, Zizheng and Cai, Jianfei and Zhuang, Bohan},
-  booktitle={CVPR},
+@inproceedings{bo2023synblink,
+  title={SynBlink and BlinkFormer: A Synthetic Dataset and Transformer-Based Method for Video Blink Detection},
+  author={Bo Liu, Yang Xu, Feng Lu},
+  booktitle={BMVC},
   year={2023}
 }
 ```
 
-
-
 ## Acknowledgement
 
 This implementation is built upon [DeiT](https://github.com/facebookresearch/deit) and [Swin](https://github.com/microsoft/Swin-Transformer). We thank the authors for their released code.
+
+## Contact
+
+Welcome to raise issues or email to bliu03@buaa.edu.cn for any question.
 
 ## License
 

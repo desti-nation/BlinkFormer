@@ -1,18 +1,13 @@
 # [BMVC-23] SynBlink and BlinkFormer
-This is the official code and data for paper [SynBlink and BlinkFormer: A Synthetic Dataset and Transformer-Based Method for Video Blink Detection](http://phi-ai.buaa.edu.cn).
+This is the official code and data for paper [SynBlink and BlinkFormer: A Synthetic Dataset and Transformer-Based Method for Video Blink Detection](http://phi-ai.buaa.edu.cn), accepted by BMVC 2023.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 
-This is the official PyTorch implementation of [Stitchable Neural Networks](https://arxiv.org/abs/2302.06586).
-
 ## Introduction
 
-![](.github/framework.png)
-
-Stitchable Neural Network (SN-Net) is a novel scalable and efficient framework for model deployment which cheaply produces numerous networks with different complexity and performance trade-offs given a family of pretrained neural networks, which we call anchors. Specifically, SN-Net splits the anchors across the blocks/layers and then stitches them together with simple stitching layers to map the activations from one anchor to another.
-
-With only a few epochs of training, SN-Net effectively interpolates between the performance of anchors with varying scales. At runtime, SN-Net can instantly adapt to dynamic resource constraints by switching the stitching positions. 
+Accurate blink detection algorithms have significant implications in numerous fields, including human-computer interaction, driving safety, cognitive science, and medical diagnostics. Despite considerable efforts, the dataset volume for blink detection remains relatively small due to the cost of data collection and annotation, and there is still room for improvement in the accuracy of current algorithms.
+In this paper, we introduce a workflow for synthesizing video data in Blender. Fully-rigged 3D human models are programmatically controlled, with variations in head movement, blinking, camera angles, background types, and lighting intensities. We used this workflow to create the *SynBlink* dataset, which includes 50,000 video clips and their corresponding annotations. Additionally, we present *BlinkFormer*, an innovative blink detection algorithm based on Transformer architecture that fully exploits temporal information from video clips.
 
 ## SynBlink
 

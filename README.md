@@ -11,51 +11,15 @@ In this paper, we introduce a workflow for synthesizing video data in Blender. F
 
 ## SynBlink Dataset
 
+download link: 
+
 ## BlinkFormer
 
+### Requirements
 
+### Test on HUST-LEBW dataset
 
-## Getting Started
-
-SN-Net is a general framework. However, as different model families are trained differently, we use their own code for stitching experiments. In this repo, we provide examples for several model families, such as plain ViTs, hierarchical ViTs, CNNs, CNN-ViT, and lightweight ViTs.
-
-To use our repo, we suggest creating a Python virtual environment.
-
-```bash
-conda create -n snnet python=3.9
-pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
-pip install fvcore
-pip install timm==0.6.12
-```
-
-Next, you can feel free to experiment with different settings.
-
-For experiments with plain ViTs, please refer to [stitching_deit](./stitching_deit).
-
-For experiments with hierarchical ViTs, please refer to [stitching_swin](./stitching_swin).
-
-For experiments with CNNs and CNN-ViT, please refer to [stitching_resnet_swin](./stitching_resnet_swin).
-
-For experiments with lightweight ViTs, please refer to [stitching_levit](./stitching_levit).
-
-
-## Best Practice for Extension
-
-Please feel free to extend SN-Net into other model familiy. The following tips may help your experiments.
-
-### For Better Stitching
-
-1. For paired stitching (equal depth) such as on plain ViTs, using a small sliding window for stitching usually achieves a smoother performance curve.
-2. For unpaired stitching (unequal depth) such as on hierarchical ViTs, split the architecture into different stages and stitch within the same stage.
-3. Note that many existing models allocate most blocks/layers into the 3rd stage, thus stitching at the 3rd stage can help to obtain more stitches. 
-4. Remember to initialize your stitching layers. A few samples can be enough.
-
-
-### For Better Training
-
-1. Uniformly decreasing the learning rate (the training time LR) by 10x can serve as a good starting point. See our settings in DeiT-based experiments.
-2. If the above is not good, try to decrease the learning rate for anchors while using a relatively larger learning rate for stitching layers. See our Swin-based experiments.
-3. Training with more epochs (e.g., 100) can be better, but it also comes at a higher computational cost.
+### Train
 
 
 ## Citation

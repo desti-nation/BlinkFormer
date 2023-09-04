@@ -30,7 +30,7 @@ If you use SynBlink or BlinkFormer in your research, please consider the followi
 @inproceedings{bo2023synblink,
   title={SynBlink and BlinkFormer: A Synthetic Dataset and Transformer-Based Method for Video Blink Detection},
   author={Bo Liu, Yang Xu, Feng Lu},
-  booktitle={BMVC},
+  booktitle={British Machine Vision Conference (BMVC)},
   year={2023}
 }
 ```

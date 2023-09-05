@@ -11,7 +11,30 @@ In this paper, we introduce a workflow for synthesizing video data in Blender. F
 
 ## SynBlink Dataset
 
-download link: 
+- download link: https://pan.baidu.com/s/1bJ0nj0SxfVCxRmICKz5p8A?pwd=synb (access code: synb)
+
+- structure
+```
+    SynBlink-50K
+    ├── F_01_0000_NB_TEB_HL
+    │   ├── 01.png
+    │   ├── 02.png
+    │   ├── ...
+    │   ├── 13.png
+    │   └── annotations.json
+    ├── ...
+    ├── M_01_0000_BL_IMB_LL
+    │   ├── 01.png
+    │   ├── 02.png
+    │   ├── ...
+    │   ├── 13.png
+    │   └── annotations.json
+    ├── ...
+    └── ...
+```
+Note: F_01_0000_NB_TEB_HL (F: Female (M: Male), id = 1, video id = 0000, NB: No Blink (BL: Blink), TEB: Texture Background (IMB: Image Background, HDB: HDRI Background), HL: High Light (LL: Low Light, ML: Medium Light))
+
+- data generation code for Blender: will be coming soon
 
 ## BlinkFormer
 
@@ -37,7 +60,7 @@ If you use SynBlink or BlinkFormer in your research, please consider the followi
 
 ## Acknowledgement
 
-This implementation is built upon [VideoTransformer-pytorch](https://github.com/mx-mark/VideoTransformer-pytorch) and [vit-pytorch](https://github.com/lucidrains/vit-pytorch). We thank the authors for their released code.
+This implementation is built upon [VideoTransformer-pytorch](https://github.com/mx-mark/VideoTransformer-pytorch), [vit-pytorch](https://github.com/lucidrains/vit-pytorch) and [SyntheticHeadPose](https://github.com/C3Imaging/SyntheticHeadPose). We thank the authors for their released code.
 
 ## Contact
 

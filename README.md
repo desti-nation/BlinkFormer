@@ -40,8 +40,8 @@ In this paper, we introduce a workflow for synthesizing video data in Blender. F
 Note: F_01_0000_NB_TEB_HL (F: Female (M: Male), id = 1, video id = 0000, NB: No Blink (BL: Blink), TEB: Texture Background (IMB: Image Background, HDB: HDRI Background), HL: High Light (LL: Low Light, ML: Medium Light))
 
 - Annotations:
-```json
 SynBlink-50K > F_01_0000_NB_TEB_HL > annotations.json
+```
 {
     "01": {
         "L_Eye_Left": [
@@ -70,7 +70,6 @@ SynBlink-50K > F_01_0000_NB_TEB_HL > annotations.json
         ],
         "Blink_Strength": 0.06183916702866554
     },
-    ...
 }
 ```
 Note: 01: frame id, L_Eye_Left/L_Eye_Right/L_Eye_Center: Left eye keypoints, R_Eye_Left/R_Eye_Right/R_Eye_Center: Right eye keypoints, Blink_Strength: The degree of eye closure is represented on a scale from 0 to 1, where 1 indicates complete eye closure and 0 represents fully open eyes.

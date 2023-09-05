@@ -40,7 +40,9 @@ In this paper, we introduce a workflow for synthesizing video data in Blender. F
 Note: F_01_0000_NB_TEB_HL (F: Female (M: Male), id = 1, video id = 0000, NB: No Blink (BL: Blink), TEB: Texture Background (IMB: Image Background, HDB: HDRI Background), HL: High Light (LL: Low Light, ML: Medium Light))
 
 - Annotations:
+
 SynBlink-50K > F_01_0000_NB_TEB_HL > annotations.json
+
 ```
 {
     "01": {

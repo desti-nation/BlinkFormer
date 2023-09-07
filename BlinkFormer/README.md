@@ -2,13 +2,15 @@
 
 - HUST-LEBW
   1. Download HUST-LEBW dataset from [link](https://thorhu.github.io/Eyeblink-in-the-wild/)
-  2. Change the root_path of HUSTDataset to your local path
+  2. Change the root_path of HUSTDataset to your data_path
+  3. Put json files in data_split/HUST-LEBW to your data_path
 
 - SynBlink
   
     1. Download SybBlink dataset from [link](https://pan.baidu.com/s/1bJ0nj0SxfVCxRmICKz5p8A?pwd=synb)
     2. Crop eyes and save as .npy with shape 13\*48\*48\*3
-    3. Change the root_path and npy_path of SynBlinkDataset to your local path
+    3. Change the root_path and npy_path of SynBlinkDataset to your data_path
+    4. Put json files in data_split/SynBlink to your data_path
 
 # Test on HUST-LEBW dataset
 

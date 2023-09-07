@@ -12,6 +12,8 @@
 
 # Test on HUST-LEBW dataset
 
+downlaod weights from [link](https://pan.baidu.com/s/1NN_Y5Uiwpxx7-sAA4L0Cyg?pwd=synb)
+
 ```bash
 conda activate your_venv
 

@@ -76,22 +76,17 @@ SynBlink-50K > F_01_0000_NB_TEB_HL > annotations.json
 ```
 Note: 01: frame id, L_Eye_Left/L_Eye_Right/L_Eye_Center: Left eye keypoints, R_Eye_Left/R_Eye_Right/R_Eye_Center: Right eye keypoints, Blink_Strength: The degree of eye closure is represented on a scale from 0 to 1, where 1 indicates complete eye closure and 0 represents fully open eyes.
 
-- Generation Code:
-
-https://github.com/desti-nation/BlinkFormer/tree/main/SynBlink-data-generation
+- Generation Code: Please Refer to the [SynBlink-data-generation](https://github.com/desti-nation/BlinkFormer/tree/main/SynBlink-data-generation
+) folder.
 
 ---
 
-## BlinkFormer
+## BlinkFormer Model
 
-the code will be coming soon
+![](blinkformer.png)
 
-### Requirements
-
-### Test on HUST-LEBW dataset
-
-### Train
-
+Code: Please Refer to the [BlinkFormer](https://github.com/desti-nation/BlinkFormer/tree/main/BlinkFormer
+) folder.
 
 ## Citation
 
